@@ -11,9 +11,9 @@
     "main": "index.js",
     "devDependencies": {
         "@types/node": "^20.14.9",
+        "tsup": "^8.2.4",
         "tsx": "^4.16.2",
-        "typescript": "^5.5.2",
-        "tsup": "^8.2.4"
+        "typescript": "^5.5.2"
     },
     "scripts": {
         "dev": "tsx watch src/server.ts",
