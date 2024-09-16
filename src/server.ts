@@ -27,6 +27,6 @@ MongoClient.connect(MONGODB_URI)
 app.register(GetBiddings);
 
 
-app.listen({ port: 3333 || 4000 }).then(() => {
+app.listen({ port: 3333 }).then(() => {
     console.log("Server Running...");
 });
