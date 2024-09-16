@@ -13,9 +13,9 @@ const dbName = 'db_licitacao';
 export let db: Db;
 
 config();
-const MONGODB_URI = process.env.MONGODB_URI as string;
-console.log(MONGODB_URI)
-MongoClient.connect(MONGODB_URI)
+const MONGODB_URL = process.env.MONGODB_URL as string;
+console.log(MONGODB_URL)
+MongoClient.connect(MONGODB_URL)
     .then(client => {
         db = client.db(dbName);
         console.log(dbName);
@@ -27,6 +27,6 @@ MongoClient.connect(MONGODB_URI)
 app.register(GetBiddings);
 
 
-app.listen({ port: 3333 }).then(() => {
+app.listen({port: 3333}).then(() => {
     console.log("Server Running...");
 });
